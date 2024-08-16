@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using projet_web_atrio.Data;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,12 @@ namespace projet_web_atrio
 
             services.AddRazorPages();
             services.AddControllers();
+
+            // Ajouter les services Swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mon API", Version = "v1" });
+            });
 
         }
 
@@ -58,6 +65,14 @@ namespace projet_web_atrio
             {
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
+
+                // Activer Swagger et l'interface utilisateur Swagger
+                app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mon API v1");
+                    c.RoutePrefix = string.Empty; // Utiliser Swagger à la racine
+                });
             });
         }
     }

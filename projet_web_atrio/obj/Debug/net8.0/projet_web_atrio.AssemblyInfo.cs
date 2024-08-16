@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("projet_web_atrio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f25c9e0f0cc5a59ad2dc27c64d1b4d2e0789722")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99b347a3ecca6af1c4e98007a91f0ba41e8d6ea0")]
 [assembly: System.Reflection.AssemblyProductAttribute("projet_web_atrio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("projet_web_atrio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

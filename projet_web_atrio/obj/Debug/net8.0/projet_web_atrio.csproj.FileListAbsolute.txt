@@ -275,3 +275,8 @@ C:\Users\a\source\repos\projet_web_atrio\projet_web_atrio\bin\Debug\net8.0\runti
 C:\Users\a\source\repos\projet_web_atrio\projet_web_atrio\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\a\source\repos\projet_web_atrio\projet_web_atrio\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\a\source\repos\projet_web_atrio\projet_web_atrio\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\a\source\repos\projet_web_atrio\projet_web_atrio\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\a\source\repos\projet_web_atrio\projet_web_atrio\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\a\source\repos\projet_web_atrio\projet_web_atrio\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\a\source\repos\projet_web_atrio\projet_web_atrio\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\a\source\repos\projet_web_atrio\projet_web_atrio\obj\Debug\net8.0\projet_web_atrio.MvcApplicationPartsAssemblyInfo.cs
