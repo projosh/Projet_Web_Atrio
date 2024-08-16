@@ -1,0 +1,45 @@
+﻿@page
+@model projet_web_atrio.Pages.Admin.Personnes.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Personne</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Personne.Id" />
+            <div class="form-group">
+                <label asp-for="Personne.Nom" class="control-label"></label>
+                <input asp-for="Personne.Nom" class="form-control" />
+                <span asp-validation-for="Personne.Nom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personne.Prenom" class="control-label"></label>
+                <input asp-for="Personne.Prenom" class="form-control" />
+                <span asp-validation-for="Personne.Prenom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personne.DateDeNaissance" class="control-label"></label>
+                <input asp-for="Personne.DateDeNaissance" class="form-control" />
+                <span asp-validation-for="Personne.DateDeNaissance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

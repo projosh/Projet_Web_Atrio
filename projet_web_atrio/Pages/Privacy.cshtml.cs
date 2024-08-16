@@ -15,7 +15,7 @@ namespace projet_web_atrio.Pages
         private readonly ILogger<PrivacyModel> _logger;
         DataContext _dataContext;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger, DataContext dataContext)
+        public PrivacyModel(ILogger<PrivacyModel> logger, DataContext dataContext, Personne personne)
         {
             _logger = logger;
             this._dataContext = dataContext;
@@ -23,10 +23,11 @@ namespace projet_web_atrio.Pages
 
         public void OnGet()
         {
-            var personne = new Personne() { Nom = "Toto", Prenom = "Tata", DateDeNaissance = new DateTime(1990, 5, 15) };
+            /*
+            var personne = new Personne() { Nom = "Toto", Prenom = "Tata", DateDeNaissance = new DateTime(1990, 5, 15)};
             _dataContext.Personnes.Add(personne);
             _dataContext.SaveChanges();
-
+            */
         }
     }
 }
